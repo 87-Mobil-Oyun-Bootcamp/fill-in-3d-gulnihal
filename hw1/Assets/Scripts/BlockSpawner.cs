@@ -25,6 +25,7 @@ public class BlockSpawner : MonoBehaviour
      Vector3 cubePos;
      Texture2D texture2D;
 
+    public Dictionary<Transform, Color> dict = new Dictionary<Transform, Color>();
     public Material pikaMaterial;
 
      void Awake()
@@ -55,7 +56,7 @@ public class BlockSpawner : MonoBehaviour
                  cubeObj.transform.localScale = cubeSize* Vector3.one;
                  cubeObj.GetComponent<Renderer>().material.color = pikaMaterial.color;
 
-    
+                dict.Add(cubeObj.transform, color);
             }
         }
 

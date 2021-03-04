@@ -20,6 +20,8 @@ public class BlocksDrag : MonoBehaviour
     [SerializeField]
     private GameObject cube;
 
+    public Material Material;
+
     private void Awake()
     {
         texture2D = pikaSprite.texture;
@@ -36,7 +38,7 @@ public class BlocksDrag : MonoBehaviour
                 GameObject cubeObj = Instantiate(cube, cubePos, Quaternion.identity , transform);
                 cubeObj.transform.localScale = cubeSize * Vector3.one;
                 cubeObj.transform.localPosition = cubePos;
-                cubeObj.GetComponent<Renderer>().material.color = color;
+                cubeObj.GetComponent<Renderer>().material.color = Material.color;
 
 
             }
