@@ -1,2 +1,4 @@
-# mobil oyun bootcamp hw1
+Mobil Oyun Bootcamp HW1
+Fill in the gaps 3d game
 
+Gülnihal Koruk
