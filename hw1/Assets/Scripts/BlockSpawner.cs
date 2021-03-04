@@ -16,7 +16,7 @@ public class BlockSpawner : MonoBehaviour
     [Space]
     [SerializeField]
     private GameObject PikaCube; // get original object from unity
-                               // and make the clone of it -in line 30 
+                               // and make the clone of it -in line 50 
 
      [Space]
      [SerializeField]
@@ -44,11 +44,7 @@ public class BlockSpawner : MonoBehaviour
                  {
                      continue;
                  }
-
                 
-                 //cubePos = new Vector3(i*offsetX - texture2D.width*0.5f, 0f, j*offsetY-texture2D.height*.5f); // fazla büyük
-                 //cubePos = new Vector3(i * cubeSize - texture2D.width * 0.5f, 0f, j * cubeSize - texture2D.height * .5f);
-                 // cubeSize ile çarpınca hesapladığı oranlar değişti, image ı sol altta bi yere bastı
                  cubePos = new Vector3(cubeSize*( i- (texture2D.width * 0.5f)), 0f, cubeSize*(j - (texture2D.height * .5f)));
                  //GameObject cubeObj = Instantiate(PikaCube, cubePos, Quaternion.identity, transform);
                  GameObject cubeObj = Instantiate(PikaCube, transform);
