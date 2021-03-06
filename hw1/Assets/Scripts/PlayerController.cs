@@ -4,41 +4,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    /*private Vector3 touchPosition;
-    private Vector3 direction;
-    private Rigidbody body;
+    
     [Space]
     [SerializeField]
-    private float speed = 1f;
-
-    void Awake()
-    {
-        body = GetComponent<Rigidbody>();
-    }
-
-    void FixedUpdate()
-    {
-        if (Input.touchCount > 0)
-        {
-            Touch touch = Input.GetTouch(0); // get first touch since touch count is greater than zero
-            /*
-             * Camera.main.ScreenToWorldPoint(position);
-             * position: A screen space position (often mouse x, y), 
-             * plus a z position for depth (for example, a camera clipping plane).
-             */
-    //touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
-    //touchPosition.y = 0;
-    /*direction = touchPosition - transform.position;
-    body.velocity = new Vector3(direction.x, 0f, direction.z) * speed;
-    body.rotation = Quaternion.LookRotation(body.velocity);
-
-    //TouchPhase is an enum type that contains the states of possible finger touches.
-
-}
-}*/
-    [Space]
-    [SerializeField]
-    private float speed = 1f;
+    private float speed = .5f;
 
     Vector3 firstTouchPos = Vector3.zero;
     Vector3 deltaTouchPos = Vector3.zero;
